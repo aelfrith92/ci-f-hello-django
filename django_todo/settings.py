@@ -14,6 +14,7 @@ from pathlib import Path
 import os
 if os.path.exists("env.py"):
     import env
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -77,11 +78,15 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse('postgres://msqfmfagprirwr:68a348cccfc83be0bd8370590bf94d509aacb0f241a485f431970bc3406f7ad3@ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/d8sg0ppho7ahnc')
 }
 
 
