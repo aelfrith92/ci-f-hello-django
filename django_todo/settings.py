@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = [
-    os.environ.get("HEROKU_HOSTNAME"),
-    os.environ.get("HEROKU_HOSTNAME_LH")
+    'alfr-django-todo-app.herokuapp.com',
+    'localhost'
 ]
 
 
