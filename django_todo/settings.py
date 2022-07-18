@@ -31,7 +31,7 @@ DEBUG = os.environ.get("DEBUG")
 
 ALLOWED_HOSTS = [
     os.environ.get("HEROKU_HOSTNAME"),
-    os.environ.get("HEROKU_HOSTNAME_LH"),
+    os.environ.get("HEROKU_HOSTNAME_LH")
 ]
 
 
