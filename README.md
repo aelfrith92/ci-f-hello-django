@@ -1,2 +1,5 @@
-Deployment available at
-https://alfr-django-todo-app.herokuapp.com/
+Walkthrough Project
+
+Short description: Learning Django
+
+No longer deployed
